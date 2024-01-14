@@ -1,0 +1,16 @@
+---
+
+import { Image } from 'astro:assets';
+import PetClassifier from '../images/PetClassifierCropped.png';
+import PatientOutcomes from '../images/Predicting Patient Outcomes Cropped.png'
+import DescriptiveVisuals from '../images/Descriptive Visuals Cropped.png'
+---
+
+<div class = "projlist">
+    <a href="/blog/pet-classifier/" target ="_blank">Pet Classifier<Image src={PetClassifier} alt="prof headshot." width="800" height="200"/></a>
+    <a href="/blog/patient-outcomes-predictor/" target ="_blank" >Patient Outcomes Predictor (Proprietary)<Image src={PatientOutcomes} alt="prof headshot." width="800" height="200"/></a>
+    <a href="/blog/clinical-trials-visualization/" target ="_blank">Clinical Trials Visualization (Proprietary)<Image src={DescriptiveVisuals} alt="prof headshot." width="800" height="200"/></a>
+</div>
+
+
+

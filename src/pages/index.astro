@@ -1,23 +1,37 @@
----
-
+---  
+import Header from '../components/Header.astro';
+import '../styles/global.css';
+import { Image } from 'astro:assets';
+import ProfHeadshot from '../images/ProfHeadshot.JPG';
 ---
 
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Justin Li</title>
+		<Header />
+		<style>
+			.image-container {
+			  padding: 10px; /* Optional: Add padding to the container */
+			  text-align: center; /* Optional: Center the image within the container */
+			}
+		  </style>
 	</head>
 
 	<body>
-		<a href="/">Home</a>
-		<a href="/about/">About</a>
-		
-		<h1>About Me!</h1>
-
-		<h2> currently working thru tutorial</h2>
+		<h1> Justin Li </h1>
+	<div class = "image-container">
+		<Image src={ProfHeadshot} alt="prof headshot." width="300" height="300"/>
+	</div>	
+		<p> Hi! I am a Junior studying biomedical engineering with a concentration in Machine Learning at Boston University.</p>	
+		<p> Feel free to learn more about me and check out my projects!</p>	
 	</body>
-
 </html>
+
+
+
+
+
+
+
+
+
