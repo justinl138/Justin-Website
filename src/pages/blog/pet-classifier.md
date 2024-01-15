@@ -37,5 +37,6 @@ For each of the 6 dimensionality reduction parameters, LDA, QDA, and Closest Ave
 ## Results and Next Steps
 A line chart was generated to visualize the average testing/training error rates across the set dimensions for each classifier.
 
-
+## Code
+https://github.com/justinl138/Pet-Classifier 
 
